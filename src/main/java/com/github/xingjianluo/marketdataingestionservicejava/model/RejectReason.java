@@ -1,0 +1,27 @@
+package com.github.xingjianluo.marketdataingestionservicejava.model;
+
+/**
+ * 拒绝 / 重复原因，按检查顺序排列，保证每条输入只有一个、可区分的原因。
+ */
+public enum RejectReason {
+    MISSING_SOURCE_ID,
+    MISSING_SYMBOL,
+    MISSING_OFFSET,
+    MISSING_SEQUENCE,
+    MISSING_EVENT_TIME,
+    UNSUPPORTED_TYPE,
+    INVALID_TIMESTAMP,
+    UNKNOWN_SYMBOL,
+    MISSING_TRADE_FIELDS,
+    MISSING_QUOTE_FIELDS,
+    INVALID_PRICE,
+    NEGATIVE_SIZE,
+    INCONSISTENT_QUOTE,
+    TRADE_PRICE_CONTRADICTS_QUOTE,
+    SEQUENCE_GAP,
+    SEQUENCE_CONFLICT,
+    OFFSET_ROLLBACK,
+    DUPLICATE_OFFSET,
+    DUPLICATE_SEQUENCE,
+    LATE_OUTSIDE_WINDOW
+}
