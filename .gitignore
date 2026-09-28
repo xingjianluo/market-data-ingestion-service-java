@@ -37,3 +37,5 @@ build/
 
 ### Mac OS ###
 .DS_Store
+# 本地运行产生的行情状态快照
+/data/
